@@ -1,0 +1,70 @@
+h1,
+h2 {
+	text-align: center;
+	color: brown;
+}
+h1 {
+	font: 700 40px "Arial", sans-serif;
+	color: brown;
+}
+h2 {
+	font: 500 25px "Arial", sans-serif;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.tooltip {
+	position: relative;
+	left: 50%;
+	top: 10%;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	transform: translate(-50%);
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+}
+.tooltip .tooltiptext-1 {
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip .tooltiptext-1::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip .tooltiptext-2 {
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -60px;
+}
+.tooltip .tooltiptext-2::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
